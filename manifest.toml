@@ -1,7 +1,9 @@
 [plugin]
 # Lowercase kebab-case. Must equal the directory name the plugin is installed in
 # and prefixes every command id.
-name = "my-plugin" # PLACEHOLDER: rename; must equal the install directory name
+# PLACEHOLDER: rename (lowercase kebab-case). Keep this line free of trailing comments:
+# scripts/build-plugin.sh reads the name with sed.
+name = "my-plugin"
 version = "0.1.0"
 description = "PLACEHOLDER: describe your plugin in one line."
 
