@@ -1,4 +1,5 @@
-//! A Manang plugin. Build it with `scripts/build-plugin.sh sdk/rust-plugin-template`.
+//! PLACEHOLDER plugin: replace this with your own. Build it with `scripts/build-plugin.sh <this directory>`
+//! from a checkout of the manang-sdk repository (see README.md).
 //!
 //! The plugin is stateless between calls: the host instantiates it fresh for
 //! every command and hook, so keep nothing in `static`s and use host services
@@ -15,7 +16,7 @@ wit_bindgen::generate!({
 use exports::manang::plugin::handler::Guest;
 use manang::plugin::types::{Failure, Hook, Payload};
 
-struct MyPlugin;
+struct MyPlugin; // PLACEHOLDER: rename together with the command ids
 
 fn fail(message: impl Into<String>) -> Failure {
     Failure {
